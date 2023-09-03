@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  border-top: 1px solid #212121;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  .left {
+    width: 50%;
+    background-color: #212121;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  .card {
+    max-width: 500px;
+    padding: 32px 0px;
+    margin: 0 auto;
+  }
+  .column {
+    align-items: center;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    a {
+      color: rgb(155, 155, 155);
+      font-size: 20px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .employee {
+    display: flex;
+    gap: 10px;
+  }
+  .info {
+    a {
+      color: rgb(190, 190, 190);
+      font-size: 18px;
+      display: block;
+      text-align: center;
+      line-height: 1.6;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .copy {
+    color: #888888;
+    font-size: 15px;
+  }
+  .right {
+    width: 50%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
